@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Rubik+Dirt&family=Rubik+Maps&display=swap" rel="stylesheet">
+    <title>Widjets</title>
+</head>
+<body>
+    <section>
+        <div class="iframe-box">
+            <h1>YouTube Video</h1>
+            <iframe src="https://www.youtube.com/embed/1h61EHUXdPQ?si=6nmHSaDDvXuk7k1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+
+        <div>
+            <h1>Погода Львів</h1>
+            <div class="weather-forecast">
+            <script src="https://pogoda.meta.ua/informers/get/ukraine/lvivska/lvivskiy/lviv/?count_days=5&current_weather=1&description=1&humidity=1&pressure=1&wind=1&extended_forecast=by_days&theme=colored&width=300&border_radius=16&background_color=%23015700&border_color=%23004d13&main_color=%23c7ffa8&additional_color=%23ffffff&divider_color=%23ffffff1f&shadow=1&lang=ua&size=m"></script>
+            </div>        
+        </div>
+        
+        <h1>Година</h1>
+        <div id="clock">
+            <script>
+            function updateClock() {
+                const now = new Date();
+                const hours = now.getHours().toString().padStart(2, '0');
+                const minutes = now.getMinutes().toString().padStart(2, '0');
+                const seconds = now.getSeconds().toString().padStart(2, '0');
+              
+                const clockDisplay = `${hours}:${minutes}:${seconds}`;
+                document.getElementById('clock').innerText = clockDisplay;
+              }
+              
+              function updateClockEverySecond() {
+                updateClock();
+                setInterval(updateClock, 1000);
+              }
+              
+              updateClockEverySecond();</script>
+               
+        </div>
+
+        <h1>Музика</h1>
+        <div class="audio">
+            <iframe style="border-radius: 12px;" src="https://open.spotify.com/embed/track/1Ar63CC2YckvPzXe5OLtPl?utm_source-generator" width="100%" height="352"></iframe>
+        </div>
+        
+        <h1>Інтерактивні віджети</h1>
+        <div class="box-fixed">
+            <p class="codepen" data-height="500" data-default-tab="css" data-slug-hash="XddZJY" data-user="derekmorash" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+              <span>See the Pen <a href="https://codepen.io/derekmorash/pen/XddZJY">
+              CSS BUTTONS!!</a> by Derek Morash (<a href="https://codepen.io/derekmorash">@derekmorash</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>	
+        </div>
+
+        <a href="index.html">Попередня сторінка</a>
+        
+    </section>
+</body>
+</html>

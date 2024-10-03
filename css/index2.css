@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+}
+
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/forest.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+section{
+
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+
+
+    h1{
+        font-family: "Rubik Maps", system-ui;
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(90, 133, 88);
+        border-radius: 15px;
+        border: solid 4px rgb(0, 63, 4);
+    }
+
+
+     .iframe-box{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    } 
+
+
+     .iframe-box iframe{
+        border-radius: 30px;
+        border: 3px solid ;
+        width: 60%;
+        height: 400px;
+        transition: all 0.5s ease-in-out;
+        border: solid 4px rgb(0, 63, 4);
+    } 
+
+
+     .iframe-box iframe:hover{
+        transform: scale(1.1);
+        box-shadow: 0 8px 8px -2px rgb(0, 66, 8);
+    } 
+
+    .weather-forecast{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .weather-forecast:hover{
+        transform: scale(1.1);
+        box-shadow: 0 8px 8px -2px rgb(0, 66, 8);
+    }
+
+    .audio{
+        transition: all 0.5s ease-in-out;
+    }
+
+    .audio:hover{
+        transform: scale(1.1);
+        box-shadow: 0 8px 8px -2px rgb(0, 66, 8);
+    }
+
+    .box-fixed {
+        width: 900px;
+    }	
+
+    a{
+        font-size: 35px;
+        padding-bottom: 50px;
+        text-decoration: none;
+        color: white;
+        transition: all 0.3s ease-in-out;
+    }
+
+    a:hover{
+        transform: scale(1.1);
+        text-shadow: 5px 5px 8px rgb(0, 0, 0);
+    }
+
+}
+
+
+#clock{
+    font-size: 5em;
+    color: azure;
+    background-color: rgb(4, 75, 0);
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+#clock:hover{
+    transform: scale(1.1);
+    box-shadow: 0 8px 8px -2px rgb(0, 66, 8);
+}

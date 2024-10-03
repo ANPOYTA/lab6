@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+}
+
+
+body{
+    background-image: url(../images/IMG_6965.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+
+
+section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 90px;
+
+
+    h1{
+        font-family: "Rubik Maps", system-ui;
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(229, 229, 229);
+        border-radius: 15px;
+        border: 5px solid rgb(211, 211, 211);
+    }
+
+
+    div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    div iframe{
+        border-radius: 40px;
+        border: 3px solid ;
+        width: 60%;
+        transition: all 0.5s ease-in-out;
+        border: solid 4px rgb(211, 211, 211);
+    }
+
+
+    div iframe:hover{
+        transform: scale(1.1);
+        box-shadow: 0 8px 8px -2px rgb(255, 255, 255);
+
+
+    }
+
+
+    a{
+        font-size: 35px;
+        padding-bottom: 50px;
+        text-decoration: none;
+        color: white;
+        transition: all 0.3s ease-in-out;
+    }
+
+
+    a:hover{
+        transform: scale(1.1);
+        text-shadow: 5px 5px 8px rgb(0, 0, 0);
+    }
+}
